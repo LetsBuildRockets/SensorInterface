@@ -14,14 +14,14 @@ class Sensor {
     bool enabled;
     
   public:
-    Sensor(){
+    Sensor() {
       name = "UNNAMED SENSOR";
       index = -1; 
       value = -1;
       enable();
     }
     
-    void setValue(int x) {
+   virtual void setValue(double x) {
       value = x;
     }
   
@@ -45,20 +45,17 @@ class Sensor {
     }
     
     virtual int getValue() {
-      if(enabled)
-        return value;
-      else 
-        return -1;
+      return value;
     }
     
     std::string getJSON() {
       std::stringstream stream;
       stream << "{";
-      stream << "\"name\": \"" << getName() << "\"";
+      stream << "\"name\": \"" << name << "\"";
       stream << ", " ;
-      stream << "\"index\": " << getIndex();
+      stream << "\"index\": " << index;
       stream << ", " ;
-      stream << "\"value\": " << getValue();
+      stream << "\"value\": " << value;
       stream << "}";
       return stream.str();
     }

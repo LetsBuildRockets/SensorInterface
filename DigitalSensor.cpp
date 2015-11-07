@@ -1,5 +1,3 @@
-#include <string>
-
 #include "Sensor.cpp"
 
 #ifndef DigitalSensor_H_
