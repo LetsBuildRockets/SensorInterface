@@ -8,14 +8,12 @@ class DigitalSensor : public Sensor {
       
     }
     
-    // Override the getValue function to keep the value to true, false, or -1.
+    // Override the getValue function to keep the value to true, false, or 0.
     int getValue() {
       if(value == 0)
         return 0;
-      else if (value > 0)
+      else 
         return 1;
-      else
-        return -1;
     }
 };
 #endif

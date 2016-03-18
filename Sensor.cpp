@@ -16,8 +16,8 @@ class Sensor {
   public:
     Sensor() {
       name = "UNNAMED SENSOR";
-      index = -1; 
-      value = -1;
+      index = 0; 
+      value = 0;
       enable();
     }
     

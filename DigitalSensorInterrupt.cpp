@@ -11,23 +11,19 @@ class DigitalSensorInterrupt : public Sensor {
   public:
     DigitalSensorInterrupt() {
       name = "UNNAMED SENSOR";
-      index = -1; 
-      value[0] = -1;
-      value[1] = -1;
+      index = 0; 
+      value[0] = 0;
+      value[1] = 0;
       rate = 0;
       enable();
     }
     
-    // Override the getValue function to keep the value to true, false, or -1.
+    // Override the getValue function to keep the value to true, false, or 0.
     // Then calculate the array of values into two nibbles, shift them, and then return it :)
     int getValue() {
       int rtnVal = 0;
-      for(int i = 0; i < 2; i++) {
-        if(value[i] > 0)
-          rtnVal += 1 << i*4;
-        else if(value[i] < 0)
-          rtnVal += 15 << i*4;
-      }
+      rtnVal = value[0] << 0;
+      rtnVal = value[1] << 4;
       return rtnVal;
     }
     
