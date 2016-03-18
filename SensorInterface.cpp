@@ -1,7 +1,7 @@
 #include "AnalogSensor.cpp"
 #include "DigitalSensor.cpp"
 #include "DigitalSensorInterrupt.cpp"
-
+#include "mbed.h"
 class SensorInterface {
   public:
     AnalogSensor analog[16];
@@ -10,5 +10,10 @@ class SensorInterface {
     
     SensorInterface() {
       
+    }
+    
+    void periodic() {
+      for(int eger = 0; eger < 16; eger++)
+        analog[eger].periodic();
     }
 };

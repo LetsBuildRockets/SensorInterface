@@ -1,0 +1,2 @@
+USBDevice/USBDevice/USBHAL_STM32F4.o: \
+ USBDevice/USBDevice/USBHAL_STM32F4.cpp

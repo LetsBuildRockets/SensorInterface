@@ -10,18 +10,23 @@ class AnalogSensor : public Sensor {
     double value;
     std::vector<double> data;
     int nLength;
-    
+    // Override virtual setValue
+    void setValue(double x) {
+      value = x;
+      data.push_back(x);
+      data.erase(data.begin());
+    }
   public:
     AnalogSensor() : Sensor(){
       nLength = 1;
       data.resize(1, 0);
     }
     
-    void setValue(double x) {
-      value = x;
-      data.push_back(x);
-      data.erase(data.begin());
-    }
+    // Override virtual periodic
+    void periodic() {
+      // TODO: READ ADC
+      setValue(0); // this should be an adc value, not zero
+    }    
     
     void setnLength(int _nl) {
       nLength = _nl;

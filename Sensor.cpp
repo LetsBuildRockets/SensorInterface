@@ -1,3 +1,4 @@
+#include <stdint.h>
 #include <string>
 #include <sstream>
 #include <algorithm>
@@ -12,6 +13,9 @@ class Sensor {
     int index;
     int value;
     bool enabled;
+    virtual void setValue(double x) {
+      value = x;
+    }
     
   public:
     Sensor() {
@@ -21,9 +25,15 @@ class Sensor {
       enable();
     }
     
-   virtual void setValue(double x) {
-      value = x;
+    void loadConfigFromPROM() {
+      
     }
+    
+    virtual void periodic() {
+      // TODO: Read from IO Pin
+      setValue(0); // Note, this shouldn't be zero :) 
+    }
+    
   
     // Disables the interface
     void disable() {

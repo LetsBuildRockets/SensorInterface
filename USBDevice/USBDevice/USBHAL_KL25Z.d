@@ -1,0 +1,1 @@
+USBDevice/USBDevice/USBHAL_KL25Z.o: USBDevice/USBDevice/USBHAL_KL25Z.cpp
