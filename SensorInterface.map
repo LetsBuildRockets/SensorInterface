@@ -14298,25 +14298,25 @@ OUTPUT(SensorInterface.elf elf32-littlearm)
  .comment       0x000000de       0x71 ./mbed/TARGET_LPC11U24/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
  .comment       0x000000de       0x71 ./mbed/TARGET_LPC11U24/TOOLCHAIN_GCC_ARM\libmbed.a(ticker_api.o)
 
-.debug_info     0x00000000    0x1a582
- .debug_info    0x00000000     0x682e main.o
- .debug_info    0x0000682e     0x5524 Storage.o
- .debug_info    0x0000bd52     0x1f2e Adafruit_ADS1015.o
- .debug_info    0x0000dc80     0x2267 USBDevice/USBHID/USBMouse.o
- .debug_info    0x0000fee7     0x3479 USBDevice/USBDevice/USBDevice.o
- .debug_info    0x00013360     0x2bac USBDevice/USBDevice/USBHAL_LPC11U.o
- .debug_info    0x00015f0c     0x22d7 USBDevice/USBSerial/USBSerial.o
- .debug_info    0x000181e3     0x239f USBDevice/USBSerial/USBCDC.o
+.debug_info     0x00000000    0x1902d
+ .debug_info    0x00000000     0x52d9 main.o
+ .debug_info    0x000052d9     0x5524 Storage.o
+ .debug_info    0x0000a7fd     0x1f2e Adafruit_ADS1015.o
+ .debug_info    0x0000c72b     0x2267 USBDevice/USBHID/USBMouse.o
+ .debug_info    0x0000e992     0x3479 USBDevice/USBDevice/USBDevice.o
+ .debug_info    0x00011e0b     0x2bac USBDevice/USBDevice/USBHAL_LPC11U.o
+ .debug_info    0x000149b7     0x22d7 USBDevice/USBSerial/USBSerial.o
+ .debug_info    0x00016c8e     0x239f USBDevice/USBSerial/USBCDC.o
 
-.debug_abbrev   0x00000000     0x2ebe
- .debug_abbrev  0x00000000      0x723 main.o
- .debug_abbrev  0x00000723      0x7a4 Storage.o
- .debug_abbrev  0x00000ec7      0x4fe Adafruit_ADS1015.o
- .debug_abbrev  0x000013c5      0x4fe USBDevice/USBHID/USBMouse.o
- .debug_abbrev  0x000018c3      0x5bc USBDevice/USBDevice/USBDevice.o
- .debug_abbrev  0x00001e7f      0x5e4 USBDevice/USBDevice/USBHAL_LPC11U.o
- .debug_abbrev  0x00002463      0x577 USBDevice/USBSerial/USBSerial.o
- .debug_abbrev  0x000029da      0x4e4 USBDevice/USBSerial/USBCDC.o
+.debug_abbrev   0x00000000     0x2f28
+ .debug_abbrev  0x00000000      0x78d main.o
+ .debug_abbrev  0x0000078d      0x7a4 Storage.o
+ .debug_abbrev  0x00000f31      0x4fe Adafruit_ADS1015.o
+ .debug_abbrev  0x0000142f      0x4fe USBDevice/USBHID/USBMouse.o
+ .debug_abbrev  0x0000192d      0x5bc USBDevice/USBDevice/USBDevice.o
+ .debug_abbrev  0x00001ee9      0x5e4 USBDevice/USBDevice/USBHAL_LPC11U.o
+ .debug_abbrev  0x000024cd      0x577 USBDevice/USBSerial/USBSerial.o
+ .debug_abbrev  0x00002a44      0x4e4 USBDevice/USBSerial/USBCDC.o
 
 .debug_loc      0x00000000     0x3c6b
  .debug_loc     0x00000000      0x1c3 main.o
@@ -14356,32 +14356,32 @@ OUTPUT(SensorInterface.elf elf32-littlearm)
  .debug_ranges  0x000006e0      0x180 USBDevice/USBSerial/USBSerial.o
  .debug_ranges  0x00000860       0xc8 USBDevice/USBSerial/USBCDC.o
 
-.debug_line     0x00000000     0x391b
- .debug_line    0x00000000      0x7dc main.o
- .debug_line    0x000007dc      0x89b Storage.o
- .debug_line    0x00001077      0x569 Adafruit_ADS1015.o
- .debug_line    0x000015e0      0x5be USBDevice/USBHID/USBMouse.o
- .debug_line    0x00001b9e      0x9a8 USBDevice/USBDevice/USBDevice.o
- .debug_line    0x00002546      0x83d USBDevice/USBDevice/USBHAL_LPC11U.o
- .debug_line    0x00002d83      0x5f9 USBDevice/USBSerial/USBSerial.o
- .debug_line    0x0000337c      0x59f USBDevice/USBSerial/USBCDC.o
+.debug_line     0x00000000     0x3996
+ .debug_line    0x00000000      0x857 main.o
+ .debug_line    0x00000857      0x89b Storage.o
+ .debug_line    0x000010f2      0x569 Adafruit_ADS1015.o
+ .debug_line    0x0000165b      0x5be USBDevice/USBHID/USBMouse.o
+ .debug_line    0x00001c19      0x9a8 USBDevice/USBDevice/USBDevice.o
+ .debug_line    0x000025c1      0x83d USBDevice/USBDevice/USBHAL_LPC11U.o
+ .debug_line    0x00002dfe      0x5f9 USBDevice/USBSerial/USBSerial.o
+ .debug_line    0x000033f7      0x59f USBDevice/USBSerial/USBCDC.o
 
-.debug_str      0x00000000     0xa962
- .debug_str     0x00000000     0x7813 main.o
-                               0x7bc4 (size before relaxing)
- .debug_str     0x00007813      0xffe Storage.o
+.debug_str      0x00000000     0x7c50
+ .debug_str     0x00000000     0x559a main.o
+                               0x5954 (size before relaxing)
+ .debug_str     0x0000559a      0x56f Storage.o
                                0x53bb (size before relaxing)
- .debug_str     0x00008811       0x8d Adafruit_ADS1015.o
+ .debug_str     0x00005b09       0x8d Adafruit_ADS1015.o
                                 0xeac (size before relaxing)
- .debug_str     0x0000889e      0xa7b USBDevice/USBHID/USBMouse.o
+ .debug_str     0x00005b96      0xa71 USBDevice/USBHID/USBMouse.o
                                0x12ab (size before relaxing)
- .debug_str     0x00009319      0xa71 USBDevice/USBDevice/USBDevice.o
+ .debug_str     0x00006607      0xa71 USBDevice/USBDevice/USBDevice.o
                                0x1ad9 (size before relaxing)
- .debug_str     0x00009d8a      0x83a USBDevice/USBDevice/USBHAL_LPC11U.o
+ .debug_str     0x00007078      0x83a USBDevice/USBDevice/USBHAL_LPC11U.o
                                0x17a7 (size before relaxing)
- .debug_str     0x0000a5c4      0x1e1 USBDevice/USBSerial/USBSerial.o
+ .debug_str     0x000078b2      0x1e1 USBDevice/USBSerial/USBSerial.o
                                0x14fc (size before relaxing)
- .debug_str     0x0000a7a5      0x1bd USBDevice/USBSerial/USBCDC.o
+ .debug_str     0x00007a93      0x1bd USBDevice/USBSerial/USBCDC.o
                                0x14b9 (size before relaxing)
 
 .debug_frame    0x00000000     0x81ac

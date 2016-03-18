@@ -1,5 +1,6 @@
 #include "mbed.h"
 #include "USBSerial.h"
+#include "SensorInterface.cpp"
 
 I2C i2c(P0_5, P0_4);
 

@@ -31,7 +31,9 @@ main.o: main.cpp mbed/mbed.h mbed/platform.h \
  USBDevice/USBDevice/USBDevice_Types.h USBDevice/USBDevice/USBDevice.h \
  USBDevice/USBDevice/USBDevice_Types.h USBDevice/USBDevice/USBHAL.h \
  USBDevice/USBDevice/USBEndpoints.h mbed/toolchain.h mbed/Stream.h \
- USBDevice/USBSerial/CircBuffer.h Adafruit_ADS1015.h Storage.h
+ USBDevice/USBSerial/CircBuffer.h SensorInterface.cpp AnalogSensor.cpp \
+ Sensor.cpp DigitalSensor.cpp DigitalSensorInterrupt.cpp \
+ Adafruit_ADS1015.h Storage.h
 
 mbed/mbed.h:
 
@@ -200,6 +202,16 @@ mbed/toolchain.h:
 mbed/Stream.h:
 
 USBDevice/USBSerial/CircBuffer.h:
+
+SensorInterface.cpp:
+
+AnalogSensor.cpp:
+
+Sensor.cpp:
+
+DigitalSensor.cpp:
+
+DigitalSensorInterrupt.cpp:
 
 Adafruit_ADS1015.h:
 

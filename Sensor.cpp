@@ -98,7 +98,7 @@ class Sensor {
             uint8_t qone = data.find("\"");
             std::string str = data.substr(qone+1);
             str = str.substr(0,str.find("\""));
-            std::transform(str.begin(), str.end(), str.begin(), tolower);
+            std::transform(str.begin(), str.end(), str.begin(), ::tolower);
             valueTitle = str;
           }
         }
